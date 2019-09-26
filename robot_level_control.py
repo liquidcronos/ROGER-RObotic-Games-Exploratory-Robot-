@@ -14,11 +14,11 @@ omega = (v_1-v_2)/(axis_length/2)
 import rospy
 import sys
 import numpy as np
+import robot_dimensions as robo
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
 
 #length of axis between both wheels [m]
-axis_length=0.1
 def axis_level_control(twist):
     pub_left  = rospy.publisher("left_wheel" ,Float32,queue_size=1)
     pub_right = rospy.publisher("right_wheel",Float32,queue_size=1)
@@ -27,8 +27,8 @@ def axis_level_control(twist):
 
     v_1 = Float32()
     v_2 = Float32()
-    v_1 = v_x+(omega*axis_length)/4
-    v_2 = v_x-(omega*axis_length)/4
+    v_1 = v_x+(omega*robo.axis_length)/4
+    v_2 = v_x-(omega*robo.axis_length)/4
     pub_left.publish(v_1)
     pub_right.publish(v_2)
 
