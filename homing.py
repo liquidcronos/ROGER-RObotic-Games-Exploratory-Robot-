@@ -2,14 +2,14 @@
 import numpy as np
 import rospy
 
-from geometry_msgs.msg import Pose
+from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
 
 
 class SimpleHoming:
 
     def __init__(self):
-        rospy.Subscriber('dead_reckoning', Pose, self.position_callback)
+        rospy.Subscriber('dead_reckoning', Odometry, self.position_callback)
 
         self.output = Twist()
         self.pub = rospy.Publisher("homing_cmd", Twist, queue_size=10)
@@ -27,8 +27,8 @@ class SimpleHoming:
 
     def position_callback(self,data):
 
-        rho                 = data.position.x
-        alpha               = data.orientation.z
+        rho                 = data.pose.pose.position.x
+        alpha               = data.pose.pose.orientation.z
         K = self.tuner(alpha, rho)
         k_rho = K[0]
         k_alpha = K[1]

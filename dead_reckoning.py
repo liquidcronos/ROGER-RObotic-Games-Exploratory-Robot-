@@ -9,12 +9,12 @@ vector3.y=right wheel
 import rospy 
 import numpy as np
 import robot_dimensions as robo
-from geometry_msgs.msg import Pose
+from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Vector3
 class deadreckoning:
     def __init__(self):
         rospy.subscriber("wheel",Vector3,self.encoder_callback)
-        pub=rospy.Publisher("dead_reckoning",Pose,queue_size=10)
+        pub=rospy.Publisher("dead_reckoning",Odometry,queue_size=10)
 
         encoder_counter=np.array([0,0])
         #                  x y phi
@@ -32,9 +32,12 @@ class deadreckoning:
         self.current_position=self.current_position+movement
 
         output=Odometry()
-        output.position.x   = self.current_position[0]
-        output.position.y   = self.current_position[1]
-        output.orientation.z= self.current_position[2]
+        output.pose.pose.position.x   = self.current_position[0]
+        output.pose.pose.position.y   = self.current_position[1]
+        output.pose.pose.orientation.z= self.current_position[2]
+
+        output.twist.twist.linear.x  = np.sqrt(movement[0]**2+movement[1]**2)
+        output.twist.twist.angular.z = movement[2]
         self.pub.publish(output)
         encoder_counter=new_encoder_counter
         
