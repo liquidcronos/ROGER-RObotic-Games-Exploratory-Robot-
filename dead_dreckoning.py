@@ -14,7 +14,7 @@ from geometry_msgs.msg import Vector3
 class deadreckoning:
     def __init__(self):
         rospy.subscriber("wheel",Vector3,self.encoder_callback)
-        pub=rospy.Publisher("dead_reckoning",Odometry,queue_size=10)
+        pub=rospy.Publisher("dead_reckoning",Pose,queue_size=10)
 
         encoder_counter=np.array([0,0])
         #                  x y phi
