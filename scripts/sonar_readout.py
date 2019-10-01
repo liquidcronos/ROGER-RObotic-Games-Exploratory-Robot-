@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
 Reads each sonar Sensor, calculates the distance and publishes all sensors via a pintcloud
 '''
