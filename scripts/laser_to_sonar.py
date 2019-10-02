@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 import rospy
 import numpy as np
+from std_msgs.msg import Header
 from sensor_msgs.msg import LaserScan
 from sensor_msgs.msg import PointCloud
+from geometry_msgs.msg import Point32
 
 
 def laser_callback(current_laser_scan):
@@ -21,8 +23,13 @@ def laser_callback(current_laser_scan):
     
     pub=rospy.Publisher("robotic_games/sonar",PointCloud,queue_size=1)
     output=PointCloud()
+    header=Header()
+    header.stamp=rospy.Time.now()
+    header.frame_id="robot"
+    output.header=header
     for i in range(8):
-        output.point[i].x= sonar_readings[i]
+        #TODO add position of Sensor on Pioneer!
+        output.points.append((Point32(np.sin(real_angles[i])*sonar_readings[i],np.cos(real_angles[i])*sonar_readings[i],0  )))
     pub.publish(output)
 
 def convert_laser_sonar():
