@@ -1,0 +1,27 @@
+JetBot Robotic Games
+
+Jetson Nano
+
+Ultraschall Sensoren 10er Set:
+	1x https://www.amazon.de/dp/B078S45WTG/ref=twister_B07V8K8DFJ?_encoding=UTF8&psc=1
+
+Kugelrad:
+	1x https://www.amazon.de/Kugelrolle-Universal-Transfer-Lagereinheit-F%C3%B6rderrolle/dp/B07KCDNJ47/ref=pd_sbs_60_7?_encoding=UTF8&pd_rd_i=B07KCDNJ47&pd_rd_r=7636ac3f-8e57-4257-b1e6-366c90080a0d&pd_rd_w=URvjF&pd_rd_wg=PECiB&pf_rd_p=74d946ea-18de-4443-bed6-d8837f922070&pf_rd_r=NAX06P2NVNAF4V2D47MD&psc=1&refRID=NAX06P2NVNAF4V2D47MD
+
+Motor: 
+	2x https://www.amazon.de/dp/B00PNEQ9T4/ref=emc_b_5_t 
+
+Motor Ansteuerung:
+	1x https://www.amazon.de/Adafruit-Stepper-FeatherWing-Feather-ADA2927/dp/B01A3IPNZA/ref=sr_1_12?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Adafruit+motor&qid=1568287849&s=gateway&sr=8-12
+
+Kamera:
+	1x https://www.amazon.de/Raspberry-Pi-V2-1-1080P-Kamera-Modul/dp/B01ER2SKFS/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=pi+kamera&qid=1568291749&s=gateway&sr=8-3
+
+Spannungsversorgung:
+	1x https://www.amazon.de/MissBirdler-USB-7V-24-KIS3R33S-Spannungswandler/dp/B01M351H6H/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=spannungsversorgung+5v+3a&qid=1568291626&s=gateway&sr=8-3
+
+Reifen:
+	1x https://www.amazon.de/BQLZR-Modellauto-Gummireifen-Speichen-Felgen/dp/B00LVMTNQ8/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=modellbau+felgen&qid=1568290979&s=gateway&sr=8-10
+
+Reifenbefestigung 5mm 2er Set:
+	1x https://www.amazon.de/Sourcing-Kupplung-Sechskant-Verbinder-Schrauben/dp/B07HC5F5JZ/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=sechskant%2Bkupplung&qid=1568291385&s=gateway&sr=8-1&th=1	(2pc 5mm)

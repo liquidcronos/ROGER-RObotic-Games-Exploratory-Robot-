@@ -1,0 +1,43 @@
+Jetbot 40pin-header GPIO name
+
+BOARD		PIN		TEGRA_SOC	Verwendung
+1						3.3V Motorkit
+2						5V sonar
+3						I2C SDA MotorKit
+4						5V encoder
+5						I2C SCL MotorKit
+6
+7		216		AUD_MCLK	output trigger sonar_1
+8
+9
+10
+11		50		UART2_RTS	input echo sonar_1
+12		79		DAP4_SCLK
+13		14		SPI2_SCK	output trigger sonar_2
+14
+15		194		LCD_TE		input echo sonar_2
+16		232		SPI2_CS1	input encoder left ch. A
+17
+18		15		SPI2_CS0	input encoder left ch. B
+19		16		SPI1_MOSI	output trigger sonar_3
+20						GND encoder, motorkit
+21		17		SPI1_MISO	input echo sonar_3
+22		13		SPI2_MISO	input encoder right ch. B
+23		18		SPI1_SCK	output trigger sonar_4
+24		19		SPI1_CS0	input encoder right ch. A
+25		
+26		20		SPI1_CS1
+27		
+28
+29		149		CAM_AF_EN	input echo sonar_4
+30
+31		200		GPIO_PZ0	output trigger sonar_5
+32		168		LCD_BL_PW	input echo sonar_8
+33		38		GPIO_PE6	input echo sonar_5
+34	
+35		76		DAP4_FS		output trigger sonar_6
+36		51		UART2_CTS	output trigger sonar_8
+37		12		SPI2_MOSI	input echo sonar_6
+38		77		DAP4_DIN	input echo sonar_7
+39						GND sonar
+40		78		DAP4_DOUT	output trigger sonar_7
