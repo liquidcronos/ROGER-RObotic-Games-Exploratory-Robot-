@@ -1,4 +1,4 @@
 # Roger
 ![](https://github.com/liquidcronos/robotic_games/blob/master/Pictures/Roger_white.png)
-Documentation and Code of RObotic Games Exploratory Robot (ROGER) Build by Jan Baumgärtner, Jens Wagner and Tobias Back at the Automation Lab at Heidelberg university
+Dokumenation und Code des RObotic Games Exploratory Robot (ROGER) welcher von Jens Wagner, Jan Baumgärtner und Tobias Back am ehemaligen [Lehrstuhl für Automation]{http://proaut.ziti.uni-heidelberg.de/joomla/index.php/en/} konzipiert und gebaut wurde für die Vorlesung Robotic Games.
 
